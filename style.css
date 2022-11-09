@@ -1,3 +1,25 @@
+.exercises {
+  position: relative;
+  top: 53%;
+}
+
+iframe {
+  width: 200px;
+  height: 200px;
+}
+
+.grid-container {
+  position: relative;
+  top: 63%;
+  left: 1%;
+
+  color: white;
+  font-size: 20px;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
 /* inspired by xuethms */
 
 body {
