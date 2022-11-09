@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lynn's Homepage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;0,800;1,400&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,400;0,700;0,800;1,400&family=Roboto:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- griddery by glenthemes -->
+    <!-- https://github.com/griddery/griddery.github.io -->
+    <script src="//griddery.github.io/grid.js"></script>
+    <link href="//griddery.github.io/basics.css" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            gridderyV2(".entry250", "--Post-Columns");
+        });
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <script src="https://static.tumblr.com/2pnwama/DLppehqvd/feathericons.js"></script>
+
+    <!-------MUSIC PLAYER BY GLENTHEMES------->
+    <script src="//glenthemes.github.io/-music-/glenplayer06.js"></script>
+</head>
+
+<body>
+    <div class="window-container">
+        <div class="window">
+            <div class="wind-top">
+                <p>ღ &emsp; IML300 class portfolio</p>
+            </div>
+
+            <div class="wind-info">
+                <div class="winf-deco1"></div>
+                <div class="winf-deco2"></div>
+                <div class="winf-intros">
+                    <div class="winf-intro">
+                        <div class="winf-introbox">♡</div>
+                        <span class="winf-introlab">lynn :D</span>
+                    </div>
+
+                    <div class="winf-intro">
+                        <div class="winf-introbox">♡</div>
+                        <span class="winf-introlab">she/her</span>
+                    </div>
+
+                    <div class="winf-intro">
+                        <div class="winf-introbox">♡</div>
+                        <span class="winf-introlab">coding novice</span>
+                    </div>
+                </div>
+
+                <div class="winf-quot">
+                    <div class="center">
+                        <div class="quot">Welcome to my portfolio for IML300. <br><br><i>The above picture is not me :D</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wind-yr"><br>&emsp;©&emsp;2022</div>
+            </div>
+
+            <div class="wind-content">
+                <div griddery-cont cols="2" griddery-id=".entry250">
+                    <div griddery tr>
+                        <div griddery-col="1">
+                            <div griddery-item>
+                                <article class="photo-post">
+                                    <a class="look" href="https://editor.p5js.org/lynnchoi/full/esusxkePv">
+                                        <div>Project 1</div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle">
+            <div class="text">
+                <p>Lynn Choi ✿ IML 300 Portfolio ✿</p>
+            </div>
+        </div>
+    </div>
+    <!-------MUSIC PLAYER BY GLENTHEMES------->
+    <div class="glenjams-06">
+        <div class="pasta">
+            <div class="vinyl"></div>
+            <div class="music-controls">
+                <div class="playy"><i data-feather="play"></i></div>
+                <div class="pausee"><i data-feather="pause"></i></div>
+            </div>
+            <div class="music-title">Merry-Go-Round of Life ♫ Howl's Moving Castle</div>
+
+            <audio id="audio" src="project-3/howlsmovingcastle.mp3" type="audio"></audio>
+        </div>
+        <div class="dog">
+            <img src="project-3/howldog.gif">
+        </div>
+    </div>
+    <!--glenjams-06-->
+    <!----end music player---->
+    <script>
+        const text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*11}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        feather.replace()
+    </script>
+</body></html>
