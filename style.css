@@ -45,7 +45,7 @@ p:last-child { margin-bottom: 0; }
 
 /** window structure **/
 .window-container {
-    right: calc( 50% - 415px);
+    right: calc( 50% - 440px);
     position: fixed;
     top: 63%;
     -ms-transform: translateY(-50%);
@@ -57,7 +57,7 @@ p:last-child { margin-bottom: 0; }
 
 .window {
     height: 500px;
-    width: 830px;
+    width: 875px;
     background-color: whitesmoke;
     border: 1px solid;
     border-color: darkgray;
@@ -90,19 +90,21 @@ p:last-child { margin-bottom: 0; }
     position: relative;
     margin: 0 0 0 251px;
     height: 448px;
-    width: 580px;
+    width: 650px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-/** scrollbar **/
-::-webkit-scrollbar { width: 14px; }
-::-webkit-scrollbar-track-piece { background-color: ghostwhite; }
+.wind-content{
+    width:540px;
+    margin: 0 20px 20px 20px;
+}
 
-::-webkit-scrollbar-thumb:vertical {
-    width: 6px;
-    border: 4px solid;
-    border-color:whitesmoke;
+/** scrollbar **/
+::-webkit-scrollbar{ width: 14px; }
+::-webkit-scrollbar-track{ background-color: whitesmoke; }
+::-webkit-scrollbar-thumb{
+    border: 4px solid whitesmoke;
     background-color: gold;
     border-radius: 100px;
 }
@@ -225,7 +227,7 @@ p:last-child { margin-bottom: 0; }
     display:flex;
     justify-content:center;
     align-items:center;
-    left:700px;
+    left:730px;
     bottom:550px;
 }
 
@@ -260,6 +262,12 @@ p:last-child { margin-bottom: 0; }
    --Music-Controls-Size:12px;
    --Music-Title-Font-Size:11px;
    --Music-Title-Color:#000;
+    
+    /** for rest of site **/
+    --Post-Columns: 2;
+    --Post-Columns-Spacing: 20px;
+    --Post-Rows-Spacing: 0px;
+    --post-width: 250px;
 }
 .glenjams-06 {
    display:none;
@@ -351,12 +359,68 @@ p:last-child { margin-bottom: 0; }
 
 /** dog **/
 .dog{
-    position:absolute;
-    left: 850px;
-    bottom:-40px;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    margin-bottom:-10px;
+    margin-left:900px;
 }
 
 .dog img{
     width:200px;
 }
+
+/** posts spacing **/
+[griddery-id=".entry250"]
+[griddery-item] + [griddery-item]{
+    margin-top:var(--Post-Rows-Spacing);
+}
+
+[griddery-id=".entry250"]
+[griddery-col] + [griddery-col]{
+    padding-left:var(--Post-Columns-Spacing);
+}
+
 /** posts **/
+.entry {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid;
+    border-color: darkgray;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    transition: 0.4s ease-in-out;
+    width: var(--post-width);
+}
+
+.entry-photo {
+    margin: 0 auto;
+    width: var(--post-width);
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.entry-photoset { width: var(--post-width); }
+.photoset-grid { padding-bottom: 0; }
+
+[photoset-layout] {
+    width: var(--post-width);
+    grid-gap: {select:Photoset Grid Gap};
+    overflow: hidden;
+    border-radius: 5px;
+    box-sizing:border-box;
+}
+
+(display:grid)[photoset-layout]{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+}
+
+[photoset-layout] div {cursor: pointer;}
+[photoset-layout] img {border-radius: 0;}
+
+.entry-caption{
+    text-align:right;
+}
