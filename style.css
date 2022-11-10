@@ -361,7 +361,7 @@ p:last-child { margin-bottom: 0; }
 /** dog **/
 /*
 .dog{
-    position:flex;
+    position:fixed;
     bottom:0px;
     left:0px;
     margin-bottom:-10px;
@@ -370,11 +370,8 @@ p:last-child { margin-bottom: 0; }
 */
 
 .dog{
-    position:flex;
-    bottom:0px;
-    left:0px;
-    margin-bottom:-10px;
-    margin-left:900px;
+    position:relative;
+    left:900px;
 }
 
 .dog img{
