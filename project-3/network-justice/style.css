@@ -1,0 +1,240 @@
+/* basics */
+body {
+    background-color: #252525;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Karla;
+    color:ghostwhite;
+    font-size:25px;
+}
+
+.title{
+    font-size:95px;
+    font-weight:bolder;
+    margin:auto;
+}
+
+.caption{
+    font-size:45px;
+    font-weight:bold;
+    margin:auto;
+}
+
+#center-index{
+    text-align:center;
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content:center;
+    padding:245px 0;
+}
+
+/* strikeout */
+/*https://codepen.io/MananTank/pen/qBdyZXR*/
+.content{
+    margin-bottom: 4em;
+    max-width:150px;
+    margin:auto;
+    text-align:center;
+}
+
+.content p{
+    background-repeat:no-repeat;
+    transition: all 500ms ease-in-out;
+}
+
+.strike p {
+  background-position: center left;
+  background-size: 100% 10px;
+  background-image: linear-gradient(to right, red, red);
+  padding-bottom: 4px;
+}
+.strike:hover p {
+  background-position: bottom left;
+  background-size: 100% 3px;
+  font-style: italic;
+}
+.strike a{
+    text-decoration:none;
+    color:ghostwhite;
+}
+
+.strike:hover a{
+    text-decoration:none;
+    font-weight:bolder;
+    color:ghostwhite;
+}
+
+/* timer bar */
+.line-box{
+    width:window.innerHeight;
+    height:20px;
+    background:gray
+}
+
+.line-box .progress{
+    height:20px;
+    background-color:red;
+    animation: timer 10s forwards cubic-bezier(0,0,0,0);
+}
+
+
+
+/* fades */
+.fade-in {
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+    
+.fade-in-delay {
+  animation: delay ease 7s;
+  -webkit-animation: delay ease 7s;
+  -moz-animation: delay ease 7s;
+  -o-animation: delay ease 7s;
+  -ms-animation: delay ease 7s;
+
+    animation-delay:2s;
+}
+@keyframes delay {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes delay {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes delay {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes delay {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes delay {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+.fade-out {
+  animation: fadeOut ease 4s;
+  -webkit-animation: fadeOut ease 4s;
+  -moz-animation: fadeOut ease 4s;
+  -o-animation: fadeOut ease 4s;
+  -ms-animation: fadeOut ease 4s;
+    
+    animation-delay:5s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
