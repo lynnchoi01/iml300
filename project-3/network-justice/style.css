@@ -76,10 +76,17 @@ body {
 .line-box .progress{
     height:20px;
     background-color:red;
-    animation: timer 10s forwards cubic-bezier(0,0,0,0);
+    animation: timer 3s forwards cubic-bezier(0,0,0,0);
 }
 
-
+@keyframes timer{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:100%;
+    }
+}
 
 /* fades */
 .fade-in {
