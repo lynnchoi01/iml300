@@ -46,8 +46,8 @@ body {
 
 .strike p {
   background-position: center left;
-  background-size: 100% 10px;
-  background-image: linear-gradient(to right, red, red);
+  background-size: 100% 7px;
+  background-image: linear-gradient(to right, white, white);
   padding-bottom: 4px;
 }
 .strike:hover p {
@@ -69,12 +69,12 @@ body {
 /* timer bar */
 .line-box{
     width:window.innerHeight;
-    height:20px;
+    height:10px;
     background:gray
 }
 
 .line-box .progress{
-    height:20px;
+    height:10px;
     background-color:red;
     animation: timer 3s forwards cubic-bezier(0,0,0,0);
 }
