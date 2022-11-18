@@ -88,10 +88,41 @@ body {
     }
 }
 
-/* question 1 */
-.answer1a{
-    
+/* questions format */
+.questions{
+    font-size:95px;
+    font-weight:bolder;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:ghostwhite;
+    margin-top:85px;
 }
+
+.choice{
+    display:grid;
+    grid-template-columns: 510px 510px;
+    grid-template-rows: 75px 75px;
+    width:1020px;
+    margin:auto;
+    padding:10px;
+}
+
+.word-choice{
+    height:50px;
+    width:500px;
+    padding-top:10px;
+    border-radius:2px;
+    text-align:center;
+    align-content:center;
+    align-items: center;
+    background:ghostwhite;
+    color:#252525;
+}
+
+/* question 1 */
+
 
 /* fades */
 .fade-in {
