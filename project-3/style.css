@@ -1,12 +1,29 @@
 /* basics */
 body {
+    font-family: Karla;
+    color:ghostwhite;
+    font-size:25px;
+}
+
+.background{
     background-color: #252525;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: Karla;
-    color:ghostwhite;
-    font-size:25px;
+}
+
+.right{
+    background-color: #4FD84C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrong{
+    background-color: #D84C4C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .title{
@@ -27,7 +44,25 @@ body {
     margin:auto;
     align-items:center;
     justify-content:center;
-    padding:245px 0;
+    padding:315px 0;
+}
+
+.center-right{
+    text-align:center;
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content:center;
+    padding:225px 0;
+}
+
+.center-wrong{
+    text-align:center;
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content:center;
+    padding:225px 0;
 }
 
 /* strikeout */
@@ -37,9 +72,14 @@ body {
     max-width:150px;
     margin:auto;
     text-align:center;
+    background-repeat:no-repeat;
+    transition: all 500ms ease-in-out;
 }
-
 .content p{
+    background-repeat:no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.content a{
     background-repeat:no-repeat;
     transition: all 500ms ease-in-out;
 }
@@ -59,11 +99,66 @@ body {
     text-decoration:none;
     color:ghostwhite;
 }
-
 .strike:hover a{
     text-decoration:none;
     font-weight:bolder;
     color:ghostwhite;
+}
+
+/* blockout */
+.block{
+    margin-left:75px;
+}
+.block p {
+  color: transparent;
+  background-position: right;
+  background-size: 100% 100%;
+  background-image: linear-gradient(#808080, #808080);
+}
+.block:hover p {
+  color: #4FD84C;
+  background-size: 0% 100%;
+}
+.block a{
+    text-decoration:none;
+    color:transparent;
+}
+.block:hover a{
+    text-decoration:none;
+    font-style: italic;
+    color:ghostwhite;
+}
+
+/* highlight */
+.highlight{
+    margin-right:75px;
+}
+.highlight p {
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(#ff0, #ff0);
+}
+.highlight:hover p {
+  background-size: 100% 100%;
+}
+.highlight a{
+    text-decoration:none;
+    font-size:23.5px;
+    color:ghostwhite;
+}
+.highlight:hover a{
+    text-decoration:none;
+    font-style: italic;
+    color:#252525;
+}
+
+/* navigation */
+.navigation{
+    display:grid;
+    grid-template-columns: 510px 510px;
+    width:1020px;
+    margin:auto;
+    padding:10px;
 }
 
 /* timer bar */
@@ -90,7 +185,7 @@ body {
 
 /* questions format */
 .questions{
-    font-size:95px;
+    font-size:80px;
     font-weight:bolder;
     text-align:center;
     display:flex;
@@ -120,9 +215,6 @@ body {
     background:ghostwhite;
     color:#252525;
 }
-
-/* question 1 */
-
 
 /* fades */
 .fade-in {
@@ -174,6 +266,7 @@ body {
   }
   100% {
     opacity:1;
+    }
 }
 
 .fade-in2 {
