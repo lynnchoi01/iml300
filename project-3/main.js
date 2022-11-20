@@ -33,19 +33,19 @@ $(document).ready(function(){
     })
     
     $('a.answer1c').click(function(){
-        location.replace("page-11.html")
-    })
-
-    $('a.answer2c').click(function(){
         location.replace("page-10.html")
     })
 
+    $('a.answer2c').click(function(){
+        location.replace("page-9.html")
+    })
+
     $('a.answer3c').click(function(){
-        location.replace("page-11.html")
+        location.replace("page-10.html")
     })
 
     $('a.answer4c').click(function(){
-        location.replace("page-11.html")
+        location.replace("page-10.html")
     })
     
 })
