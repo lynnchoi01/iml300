@@ -1,51 +1,111 @@
 //questions
-$(document).ready(function(){
-    $('a.answer1a').click(function(){
+$(document).ready(function () {
+    $('a.answer1a').click(function () {
         location.replace("page-3.html")
     })
 
-    $('a.answer2a').click(function(){
+    $('a.answer2a').click(function () {
         location.replace("page-4.html")
     })
 
-    $('a.answer3a').click(function(){
+    $('a.answer3a').click(function () {
         location.replace("page-4.html")
     })
 
-    $('a.answer4a').click(function(){
+    $('a.answer4a').click(function () {
         location.replace("page-4.html")
     })
 
-    $('a.answer1b').click(function(){
+    $('a.answer1b').click(function () {
         location.replace("page-7.html")
     })
 
-    $('a.answer2b').click(function(){
+    $('a.answer2b').click(function () {
         location.replace("page-7.html")
     })
 
-    $('a.answer3b').click(function(){
+    $('a.answer3b').click(function () {
         location.replace("page-6.html")
     })
 
-    $('a.answer4b').click(function(){
+    $('a.answer4b').click(function () {
         location.replace("page-7.html")
     })
-    
-    $('a.answer1c').click(function(){
+
+    $('a.answer1c').click(function () {
         location.replace("page-10.html")
     })
 
-    $('a.answer2c').click(function(){
+    $('a.answer2c').click(function () {
         location.replace("page-9.html")
     })
 
-    $('a.answer3c').click(function(){
+    $('a.answer3c').click(function () {
         location.replace("page-10.html")
     })
 
-    $('a.answer4c').click(function(){
+    $('a.answer4c').click(function () {
         location.replace("page-10.html")
     })
-    
+
+    $('a.answer1d').click(function () {
+        location.replace("page-13.html")
+    })
+
+    $('a.answer2d').click(function () {
+        location.replace("page-13.html")
+    })
+
+    $('a.answer3d').click(function () {
+        location.replace("page-13.html")
+    })
+
+    $('a.answer4d').click(function () {
+        location.replace("page-12.html")
+    })
+
+    $('a.answer1e').click(function () {
+        location.replace("page-16.html")
+    })
+
+    $('a.answer2e').click(function () {
+        location.replace("page-16.html")
+    })
+
+    $('a.answer3e').click(function () {
+        location.replace("page-16.html")
+    })
+
+    $('a.answer4e').click(function () {
+        location.replace("page-15.html")
+    })
+
+    $('a.answer1f').click(function () {
+        location.replace("page-19.html")
+    })
+
+    $('a.answer2f').click(function () {
+        location.replace("page-18.html")
+    })
+
+    $('a.answer3f').click(function () {
+        location.replace("page-19.html")
+    })
+
+    $('a.answer4f').click(function () {
+        location.replace("page-19.html")
+    })
+
 })
+
+$(document).ready(function () {
+    gridderyV2(".entry250", "--Post-Columns");
+});
+
+//$(document).ready(function () {
+//    if $(".scroll").hover(function () {
+//        $('.world').toggleClass('hidden');
+//    },function(){
+//        $('.scroll1').toggleClass('hidden');
+//    });
+//});
