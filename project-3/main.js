@@ -97,15 +97,3 @@ $(document).ready(function () {
     })
 
 })
-
-$(document).ready(function () {
-    gridderyV2(".entry250", "--Post-Columns");
-});
-
-//$(document).ready(function () {
-//    if $(".scroll").hover(function () {
-//        $('.world').toggleClass('hidden');
-//    },function(){
-//        $('.scroll1').toggleClass('hidden');
-//    });
-//});

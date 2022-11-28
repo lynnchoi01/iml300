@@ -24,6 +24,95 @@ libs/jquery/2.2.2/jquery.min.js”></script>
     <div class="right-title">
         <p>Wow...couldn't even see it through...</p>
     </div>
-    <div></div>
+    <div class="circle1">
+        <div class="text">
+            <p>》&emsp;A particular status is attached to English that sounds as if it comes from countries</p>
+        </div>
+    </div>
+    <div class="circle2">
+        <div class="text2">
+            <p>that are wealthy, majority white and mostly monolingual.</p>
+        </div>
+    </div>
+    <div class="circle3">
+        <div class="text3">
+            <p>》&emsp;Linguistic racism can involve deliberate belittling or shaming that occurs</p>
+        </div>
+    </div>
+    <div class="circle4">
+        <div class="text4">
+            <p>despite someone's actual English proficiency.</p>
+        </div>
+    </div>
+    <div class="circle5">
+        <div class="text5">
+            <p>》&emsp;Globally, non-native speakers of English outnumber native speakers three to one.</p>
+        </div>
+    </div>
+    <div class="circle6">
+        <div class="text6">
+            <p>》&emsp;Around 60 to 75% of the world speak at least two languages.</p>
+        </div>
+    </div>
+    <div class="circle7">
+        <div class="text7">
+            <p>》&emsp;Only 20% of Americans can converse in two or more languages.</p>
+        </div>
+    </div>
+    <div class="next">
+        <div class="content block">
+        <p><a href="page-22.html">continue</a></p>
+        </div>
+    </div>
+    <!-- circle text js  -->
+    <script>
+        const text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*4.1}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        const text2 = document.querySelector('.text2 p');
+        text2.innerHTML = text2.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*6.2}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        const text3 = document.querySelector('.text3 p');
+        text3.innerHTML = text3.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*4.6}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        const text4 = document.querySelector('.text4 p');
+        text4.innerHTML = text4.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*7.75}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        const text5 = document.querySelector('.text5 p');
+        text5.innerHTML = text5.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*4.3}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        const text6 = document.querySelector('.text6 p');
+        text6.innerHTML = text6.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*5.75}deg)">${char}</span>`
+        ).join("");
+    </script>
+    <script>
+        const text7 = document.querySelector('.text7 p');
+        text7.innerHTML = text7.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i*5.75}deg)">${char}</span>`
+        ).join("");
+    </script>
 </body>
 </html>
