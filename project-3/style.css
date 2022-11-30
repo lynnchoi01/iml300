@@ -283,10 +283,6 @@ body {
 }
 
 /* scrolling text */
-.hidden{
-    visibility:hidden;
-}
-
 .scroll {
     color: ghostwhite;
     font-size: 50px;
